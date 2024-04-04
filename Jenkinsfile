@@ -1,4 +1,7 @@
 pipeline {
+  agent {any {
+  args "-u jenkins"}
+  }
   stages {
     stage("prepare") {
       steps {
