@@ -1,6 +1,7 @@
 pipeline {
-  agent {dockerfile true {
-  args "-u jenkins"}
+  agent{ 
+  {dockerfile true
+  }
   }
   stages {
     stage("prepare") {
@@ -24,6 +25,9 @@ pipeline {
       steps{
         sh "aws s3 cp packages.zip s3://some-s3-path/"
       }
+    }
+  }
+}
     }
   }
 }
