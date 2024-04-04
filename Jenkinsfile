@@ -2,7 +2,7 @@ pipeline {
 
 agent {
     dockerfile {
-        
+        label 'docker-agent'
         args "-u jenkins"
     }
 }
