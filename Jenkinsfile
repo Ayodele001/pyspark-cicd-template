@@ -1,7 +1,4 @@
 pipeline {
-  agent {dockerfile {
-  args "-u jenkins"}
-  }
   stages {
     stage("prepare") {
       steps {
