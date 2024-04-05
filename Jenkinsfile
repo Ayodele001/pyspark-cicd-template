@@ -1,8 +1,8 @@
 pipeline {
 
 agent {
-    dockerfile {
-        args "-u jenkins"
+    node {
+        label 'docker-agent'
     }
 }
 
